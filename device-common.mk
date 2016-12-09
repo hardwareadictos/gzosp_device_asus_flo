@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl 
+    android.hardware.sensors@1.0-impl
 
 # stlport
 PRODUCT_PACKAGES += \
@@ -218,6 +218,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     conn_init \
     dhcpcd.conf \
     hostapd \
