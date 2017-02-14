@@ -14,6 +14,7 @@
 
 # Inherit some common Validus stuff.
 $(call inherit-product, vendor/validus/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/validus/config/caf_fw.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/validus/config/nfc_enhanced.mk)

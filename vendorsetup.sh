@@ -1,1 +1,1 @@
-add_lunch_combo tesla_flo-userdebug
+add_lunch_combo validus_flo-userdebug
