@@ -57,6 +57,8 @@ TARGET_SCREEN_WIDTH := 1200
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@3.2-impl \
     Snap
 
 # Charger
