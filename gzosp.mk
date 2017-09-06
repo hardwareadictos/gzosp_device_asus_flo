@@ -13,12 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common Validus stuff.
-$(call inherit-product, vendor/validus/config/common_full_tablet_wifionly.mk)
-$(call inherit-product, vendor/validus/config/caf_fw.mk)
+# Inherit some common GZOSP stuff.
+$(call inherit-product, vendor/gzosp/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/gzosp/config/caf_fw.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/validus/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/gzosp/config/nfc_enhanced.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, device/asus/flo/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := flo
-PRODUCT_NAME := validus_flo
+PRODUCT_NAME := gzosp_flo
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
@@ -38,5 +38,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/razor/flo:6.0.1/MOB30X/3036618:user/release-keys \
     PRIVATE_BUILD_DESC="razor-user 6.0.1 MOB30X 3036618 release-keys"
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
+#PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="Daniel(HardwareAdictos)"
